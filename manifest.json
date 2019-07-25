@@ -1,0 +1,15 @@
+{
+  "name": "zaQpsy",
+  "short_name": "zaQpsy",
+  "start_url": "/index.html",
+  "display": "browser",
+  "background_color": "#FFE9D2",
+  "theme_color": "#FFE1C4",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "source": "/img/envelope.png",
+      "type": "image/png"
+    }
+  ]
+}

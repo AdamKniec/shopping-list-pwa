@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  .container {
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 50px;
+      background-color: teal;
+      .nav-list {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        .nav-link {
+          margin-right: 20px;
+          color: white;
+          text-decoration: none;
+          letter-spacing: 1px;
+        }
+      }
+      .hamburger {
+        width: 40px;
+        height: 22px;
+        border: none;
+        border-top: 1px solid #ffffff;
+        background: transparent;
+        cursor: pointer;
+        position: relative;
+        //zrobic ponizsze mniej powtarzalne
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          border-top: 1px solid #ffffff;
+          transform: translateY(10px);
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          border-top: 1px solid #ffffff;
+          transform: translateY(20px);
+        }
+      }
+    }
+    .navbar-side {
+      display: none;
+    }
+  }
+}
