@@ -2,14 +2,15 @@
   "name": "zaQpsy",
   "short_name": "zaQpsy",
   "start_url": "/index.html",
-  "display": "browser",
+  "display": "fullscreen",
   "background_color": "#FFE9D2",
   "theme_color": "#FFE1C4",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "source": "/img/envelope.png",
-      "type": "image/png"
+      "src": "/img/icons/debit-card-256-256.png",
+      "type": "image/png",
+      "sizes": "256x256"
     }
   ]
 }
