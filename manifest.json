@@ -11,6 +11,11 @@
       "src": "/shopping-list-pwa/img/icons/debit-card-256-256.png",
       "type": "image/png",
       "sizes": "256x256"
+    },
+    {
+      "src": "/shopping-list-pwa/img/icons/debit-card-512-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ]
 }
