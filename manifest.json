@@ -8,7 +8,7 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/img/icons/debit-card-256-256.png",
+      "src": "/shopping-list-pwa/img/icons/debit-card-256-256.png",
       "type": "image/png",
       "sizes": "256x256"
     }
