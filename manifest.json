@@ -1,7 +1,7 @@
 {
   "name": "zaQpsy",
   "short_name": "zaQpsy",
-  "start_url": "/index.html",
+  "start_url": "/shopping-list-pwa/index.html",
   "display": "fullscreen",
   "background_color": "#FFE9D2",
   "theme_color": "#FFE1C4",
