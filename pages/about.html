@@ -4,24 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./css/scss/styles.css" />
+    <link rel="stylesheet" href="../css/scss/styles.css" />
     <link rel="manifest" href="/shopping-list-pwa/manifest.json" />
-    <link
+    <!-- IOS SUPPORT -->
+    <!-- <link
       rel="apple-touch-icon"
       href="/shopping-list-pwa/img/icons/debit-card-256-256.png"
-    />
+    /> -->
+
     <!-- ponizsze moze sie okazac zbedne  -->
     <link
       rel="apple-touch-icon"
       href="/shopping-list-pwa/img/icons/debit-card-512-512.png"
     />
     <meta name="apple-mobile-web-app-status-bar" content="#aa7700" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      href="/shopping-list-pwa/img/icons/splash.png"
+      sizes="1242x2688"
+      rel="apple-touch-startup-image"
+    />
 
     <title>ZaQpsy</title>
   </head>
   <body>
-    <section class="container"></section>
+    <section class="container">
+      <nav class="navbar">
+        <p>LOGO</p>
+        <button class="hamburger"></button>
+      </nav>
+      <nav class="navbar-side">
+        <ul class="list">
+          <li class="list-item">O Autorze</li>
+          <li class="list-item">O aplikacji</li>
+          <li class="list-item">Adam</li>
+        </ul>
+      </nav>
+    </section>
+    <section class="about-author">
+      <div>
+        <p>Adam Knieć</p>
+      </div>
+    </section>
     <script src="/shopping-list-pwa/js/app.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/ui.js"></script>
   </body>
 </html>

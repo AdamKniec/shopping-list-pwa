@@ -6,7 +6,9 @@ body {
     align-items: center;
     justify-content: space-around;
     height: 50px;
-    background-color: teal; }
+    background-color: teal;
+    z-index: 10;
+    position: relative; }
     body .container .navbar .nav-list {
       display: flex;
       list-style-type: none;
@@ -41,4 +43,22 @@ body {
         border-top: 1px solid #ffffff;
         transform: translateY(20px); }
   body .container .navbar-side {
-    display: none; }
+    width: 200px; }
+    body .container .navbar-side .list {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      z-index: 1;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      display: none;
+      position: absolute;
+      top: 0; }
+      body .container .navbar-side .list li {
+        list-style-type: none;
+        margin: 50px; }
+    body .container .navbar-side .visible {
+      display: flex; }

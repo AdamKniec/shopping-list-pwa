@@ -8,6 +8,8 @@ body {
       justify-content: space-around;
       height: 50px;
       background-color: teal;
+      z-index: 10;
+      position: relative;
       .nav-list {
         display: flex;
         list-style-type: none;
@@ -48,8 +50,30 @@ body {
         }
       }
     }
+
     .navbar-side {
-      display: none;
+      width: 200px;
+      .list {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        z-index: 1;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 0;
+        li {
+          list-style-type: none;
+          margin: 50px;
+        }
+      }
+      .visible {
+        display: flex;
+      }
     }
   }
 }
