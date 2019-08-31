@@ -138,7 +138,8 @@ body {
         width: 55px;
         height: 55px;
         border: none;
-        outline: none; }
+        outline: none;
+        cursor: pointer; }
         body .shopping-list-container .list-container .open-modal-button:hover {
           cursor: pointer; }
 

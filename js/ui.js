@@ -36,8 +36,10 @@ let shoppingDataRef = firebase.database().ref("shopping-data");
   const showModal = e => {
     if (e.target == showModalButton) {
       modal.classList.add("visible");
+      console.log("Tap w button");
     } else if (e.target == modal) {
       modal.classList.remove("visible");
+      console.log("Tap w modal");
     }
   };
   window.addEventListener("click", showModal);
