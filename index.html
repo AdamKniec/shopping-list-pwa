@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/scss/styles.css" />
+
+    <!-- ponizsze wazne - czyszczenie konsoli -->
     <link rel="manifest" href="/shopping-list-pwa/manifest.json" />
+
     <!-- IOS SUPPORT -->
-    <!-- <link
+    <link
       rel="apple-touch-icon"
       href="/shopping-list-pwa/img/icons/debit-card-256-256.png"
-    /> -->
+    />
 
     <!-- ponizsze moze sie okazac zbedne  -->
+
+    <!-- Ponizsze wazne - czyszczenie konsoli -->
     <link
       rel="apple-touch-icon"
       href="/shopping-list-pwa/img/icons/debit-card-512-512.png"
@@ -28,7 +33,7 @@
     <title>ZaQpsy</title>
   </head>
   <body>
-    <section class="container">
+    <section class="header-container">
       <nav class="navbar">
         <p>LOGO</p>
         <button class="hamburger"></button>
@@ -41,7 +46,41 @@
         </ul>
       </nav>
     </section>
-    <section class="shopping-list"></section>
+    <section class="shopping-list-container">
+      <div>
+        <h2>ShoppingList</h2>
+        <div class="modal">
+          <form class="form">
+            <label>
+              Produkt
+              <input class="product" type="text" required="required" />
+            </label>
+            <label>
+              Ilość
+              <input class="quantity" type="text" required />
+            </label>
+            <label>
+              Sklep
+              <input class="shop" type="text" />
+            </label>
+            <label>
+              Uwagi
+              <input class="notes" type="text" />
+            </label>
+            <button type="submit" class="add-product">Dodaj</button>
+          </form>
+        </div>
+      </div>
+      <div class="list-container">
+        <ul class="product-list"></ul>
+        <button class="open-modal-button"></button>
+      </div>
+    </section>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
     <script src="/shopping-list-pwa/js/app.js"></script>
     <script src="js/ui.js"></script>
   </body>
