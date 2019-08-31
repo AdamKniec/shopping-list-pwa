@@ -32,6 +32,9 @@ let shoppingDataRef = firebase.database().ref("shopping-data");
 // modal handler
 (function() {
   const showModalButton = document.querySelector(".open-modal-button");
+  const shoppingListContainer = document.querySelector(
+    ".shopping-list-container"
+  );
   const modal = document.querySelector(".modal");
   const showModal = e => {
     if (e.target == showModalButton) {
@@ -42,7 +45,7 @@ let shoppingDataRef = firebase.database().ref("shopping-data");
       console.log("Tap w modal");
     }
   };
-  window.addEventListener("click", showModal);
+  shoppingListContainer.addEventListener("click", showModal);
 })();
 
 // Firebase actions
