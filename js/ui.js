@@ -15,9 +15,9 @@ let shoppingDataRef = firebase.database().ref("shopping-data");
 
 //navbar handler
 (function toggleNavbar() {
-  let hamburgerButton = document.querySelector(".hamburger");
-  let container = document.querySelector(".header-container");
-  let sideNav = document.querySelector(".list");
+  const hamburgerButton = document.querySelector(".hamburger");
+  const container = document.querySelector(".header-container");
+  const sideNav = document.querySelector(".list");
 
   container.addEventListener("click", handleHamburgerClick);
   function handleHamburgerClick(e) {

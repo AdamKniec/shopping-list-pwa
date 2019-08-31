@@ -90,6 +90,7 @@ body {
         width: 100%;
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
         animation-name: slideIn;
         animation-duration: 0.4s; }
         body .shopping-list-container .modal .form input {
